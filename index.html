@@ -27,10 +27,10 @@
         // Make the POST request
         const response = await fetch(url, {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json', // Set headers if needed
-			'Authorization': 'Token token=81FvbUEwe1bqfmKiGI_ACw' // Use if authentication is needed
-          }
+            headers: {
+    		'Authorization': `Token token=81FvbUEwe1bqfmKiGI_ACw`, // Use Bearer token authorization
+    		'Content-Type': 'application/json' // Set Content-Type if needed
+		    }
         });
 
         if (!response.ok) {
